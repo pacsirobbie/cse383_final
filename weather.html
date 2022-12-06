@@ -1,0 +1,109 @@
+<!-- Author: Robbie Pacsi
+Email: pacsir@miamioh.edu
+Section: C
+Date: 12/5/22
+Final -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="stylesheet" href="weather.css">
+    <meta charset="utf-8">
+    <title>Final: Weather</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="               crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+    <script src="weather2.js?rev=2"></script>
+  </head>
+
+  <body>
+	  
+	<div id="menuBar">
+		<ul id="menu">
+			
+			<li><a href="home.html">Home</a></li>
+			<li><a id="currentPage">Weather</a></li>
+		</ul>
+	</div>
+	
+	<h1 id="main">Weather</h1>
+	
+	<div id = "information">
+		<br>
+		<h6> Use the following to search for the 5 day weather forecast via zip code. </h6>
+		<br>
+		<div id="howTo">
+			<h4>  Enter Zip Code: </h4>
+		</div>
+		<div class = "d-flex justify-content-center">
+			<div class="form-group col-md-2">
+				<input type=number class="form-control" id="zip" placeholder="Enter Zip Code">
+			</div>
+		</div>
+		<div id="howTo">
+			<button type="button" onClick="findLonLat(document.getElementById('zip').value)" class="btn btn-primary">Search</button>
+			<br><br>
+			<p id=error> </p>
+		</div>
+		
+		<h3 id="location"></h3>
+	
+		<div id="weather" style="visibility:hidden">
+			<div class="row seven-cols d-flex justify-content-center">
+			    <div class="col-sm-2 chart" style="width: 12.499999995%; flex: 0 0 12.499%;max-width: 12.499%;">
+					<h4 id="dayWeek1"></h4>
+					<h5 id="date1"></h5>
+					<p id='day1'></p>
+					<p id='weather1'></p>
+					<h5 id='temp1'></h5>
+					<p id='high1' style='margin:0'></p>
+					<p id='low1'></p>
+			    </div>
+			    <div class="col-sm-2 chart" style="width: 12.499999995%; flex: 0 0 12.499%;max-width: 12.499%;">
+					<h4 id="dayWeek2"></h4>
+					<h5 id="date2"></h5>
+					<p id='day2'></p>
+					<p id='weather2'></p>
+					<h5 id='temp2'></h5>
+					<p id='high2' style='margin:0'></p>
+					<p id='low2'></p>
+			    </div>
+			    <div class="col-sm-2 chart" style="width: 12.499999995%; flex: 0 0 12.499%;max-width: 12.499%;">
+					<h4 id="dayWeek3"></h4>
+					<h5 id="date3"></h5>
+					<p id='day3'></p>
+					<p id='weather3'></p>
+					<h5 id='temp3'></h5>
+					<p id='high3' style='margin:0'></p>
+					<p id='low3'></p>
+			    </div>
+			    <div class="col-sm-2 chart" style="width: 12.499999995%; flex: 0 0 12.499%;max-width: 12.499%;">
+					<h4 id="dayWeek4"></h4>
+					<h5 id="date4"></h5>
+					<p id='day4'></p>
+					<p id='weather4'></p>
+					<h5 id='temp4'></h5>
+					<p id='high4' style='margin:0'></p>
+					<p id='low4'></p>
+			    </div>
+			    <div class="col-sm-2 chart" style="width: 12.499999995%; flex: 0 0 12.499%;max-width: 12.499%;">
+					<h4 id="dayWeek5"></h4>
+					<h5 id="date5"></h5>
+					<p id='day5'></p>
+					<p id='weather5'></p>
+					<h5 id='temp5'></h5>
+					<p id='high5' style='margin:0'></p>
+					<p id='low5'></p>
+			    </div>
+			  </div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

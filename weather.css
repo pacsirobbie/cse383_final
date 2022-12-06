@@ -1,0 +1,75 @@
+<!-- Author: Robbie Pacsi
+Email: pacsir@miamioh.edu
+Section: C
+Date: 12/5/22
+Final -->
+
+#main {
+	text-align: center;
+}
+		
+#information {
+	border: 2px solid black;
+	border-radius: 12px;
+	background-color: rgba(245,254,152,0.8);
+	align-content: center;
+	text-align: center;
+	width: 85%;
+	margin:0 auto;
+}
+		
+#menu {
+    list-style-type: none;
+    margin-bottom: 15px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+		
+#weather {
+	margin-left: 15px;
+}
+		
+.chart {
+	margin: 10px;
+	text-align: center;
+	border: 1px solid black;
+	overflow: none;
+	background: #b9f2fa;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #1a1919;
+}
+		
+li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#currentPage {
+    background-color: #cf0a38;
+}
+		
+body
+{
+	background-color: rgba(221,152,254,0.8) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
